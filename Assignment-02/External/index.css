@@ -1,0 +1,85 @@
+/* Panel widget */
+.panel {
+  margin: 10px auto;
+}
+.header {
+  border-radius: 0.35rem 0.35rem 0 0;
+  color: white;
+  padding: 0.5rem 0.5rem;
+}
+.body {
+  padding: 0.5rem 0.5rem;
+  border-radius: 0 0 0.35rem 0.35rem;
+}
+
+.body-primary {
+  border: 1.7px solid navy;
+}
+.body-secondary {
+  border: 1.7px solid olive;
+}
+.body-error {
+  border: 1.7px solid crimson;
+}
+
+.header-primary {
+  background-color: navy;
+}
+
+.header-secondary {
+  background-color: olive;
+}
+
+.header-error {
+  background-color: crimson;
+}
+
+/* Button widgets */
+button {
+  padding: 0.5rem 0.625rem;
+  border: 0px;
+  border-radius: 5px;
+  background-color: #00006d;
+}
+.primary {
+  background-color: navy;
+  color: white;
+}
+.primary:hover {
+  background-color: #6666ff;
+  color: white;
+}
+.primary:active {
+  background-color: navy;
+  color: white;
+}
+
+.secondary {
+  background-color: olive;
+  color: white;
+}
+.secondary:hover {
+  background-color: #b3b300;
+  color: white;
+}
+.secondary:active {
+  background-color: olive;
+  color: white;
+}
+.error {
+  background-color: crimson;
+  color: white;
+}
+.error:hover {
+  background-color: #ee4466;
+  color: white;
+}
+.error:active {
+  background-color: crimson;
+  color: white;
+}
+
+.google {
+  text-decoration: none;
+  color: white;
+}
