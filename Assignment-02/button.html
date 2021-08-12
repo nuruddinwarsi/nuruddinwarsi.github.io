@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Theming - Button</title>
+    <style>
+      button {
+        padding: 0.5rem 0.625rem;
+        border: 0px;
+        border-radius: 5px;
+        background-color: #00006d;
+      }
+      .primary {
+        background-color: navy;
+        color: white;
+      }
+      .primary:hover {
+        background-color: #6666ff;
+        color: white;
+      }
+      .primary:active {
+        background-color: navy;
+        color: white;
+      }
+
+      .secondary {
+        background-color: olive;
+        color: white;
+      }
+      .secondary:hover {
+        background-color: #b3b300;
+        color: white;
+      }
+      .secondary:active {
+        background-color: olive;
+        color: white;
+      }
+      .error {
+        background-color: crimson;
+        color: white;
+      }
+      .error:hover {
+        background-color: #ee4466;
+        color: white;
+      }
+      .error:active {
+        background-color: crimson;
+        color: white;
+      }
+
+      .google {
+        text-decoration: none;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">Home</a>
+      <a href="panel.html">Panel</a>
+      <a href="button.html">Button</a>
+      <h1>Theming - Button</h1>
+    </header>
+    <hr />
+
+    <button class="primary">Buy Now!</button>
+    <button class="secondary">Ok! Got it! Great!</button>
+    <button class="error">Delete</button>
+    <button class="google">
+      <a class="google" href="https://www.google.com/">Google search</a>
+    </button>
+  </body>
+</html>
