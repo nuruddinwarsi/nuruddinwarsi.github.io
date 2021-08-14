@@ -5,7 +5,7 @@ body {
 .main {
   margin: 0 0;
   width: 1140px;
-  padding: 0 12%;
+  padding: 5% 12%;
 }
 
 .navbar {
@@ -13,6 +13,9 @@ body {
   background-color: navy;
   overflow: hidden;
   height: 64px;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 .navbar-link {
@@ -21,7 +24,7 @@ body {
   text-align: center;
   text-decoration: none;
   font-size: 24px;
-  padding: 1.3% 1.2%;
+  padding: 1% 1.2%;
 }
 .navbar-img {
   float: left;
@@ -29,12 +32,12 @@ body {
   text-align: center;
   text-decoration: none;
   font-size: 24px;
-  padding: 1.1% 3% 1.1%;
+  padding: 0.6% 3% 1.1%;
 }
 
 .navbar-link:hover {
   background-color: #000066;
-  padding: 1.42% 1.2%;
+  padding: 1.3% 1.2%;
 }
 
 .active {
