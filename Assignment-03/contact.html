@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Example Consulting Pvt Ltd" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Example Consulting Pvt Ltd</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <a class="navbar-img" href="index.html">
+        <img src="images/logo.png" alt="" />
+      </a>
+      <a class="navbar-link" href="index.html">Home</a>
+      <a class="navbar-link" href="portfolio.html">Portfolio</a>
+      <a class="navbar-link active" href="contact.html">Contact Us</a>
+    </div>
+    <div class="main">
+      <h2>Contact Us</h2>
+      <p>
+        Phone:
+        <a href="tel:+000-123-456-7890">+000-123-456-7890</a>
+      </p>
+      <p>
+        Email:
+        <a href="mailto:test@mail.com">test@mail.com</a>
+      </p>
+
+      <h2>Drop a message</h2>
+
+      <p>
+        Please drop us a message by filling out this form and we will get back
+        toyou within 2 working days
+      </p>
+
+      <p>Fields marked with * are required</p>
+      <form action="submit.html" method="POST">
+        <!-- Name input -->
+        <div class="name">
+          <label for="name">Your name <span class="highlight">*</span></label>
+          <br />
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="John Doe"
+            required
+          />
+        </div>
+        <br />
+
+        <!-- Email input -->
+        <div class="email">
+          <label for="email">Your email <span class="highlight">*</span></label>
+          <br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="john.doe@example.com"
+          />
+        </div>
+        <br />
+
+        <!-- What to buy dropdown -->
+        <div class="buy">
+          <label for="buy"
+            >What are you looking to buy <span class="highlight">*</span></label
+          >
+          <br />
+          <select name="buy" id="buy">
+            <option value="" selected>- Choose one -</option>
+            <option value="blog">Blog</option>
+            <option value="store">Store</option>
+            <option value="game">Game</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <br />
+
+        <!-- Platform support required -->
+        <fieldset>
+          <legend>
+            Platform you plan to support <span class="highlight">*</span>
+            <br />
+            <input
+              type="checkbox"
+              name="platform"
+              id="web"
+              value="web"
+              checked
+            />
+            <label for="web">Web</label>
+            <input type="checkbox" name="platform" id="mobile" value="mobile" />
+            <label for="mobile">Mobile</label>
+            <input
+              type="checkbox"
+              name="platform"
+              id="desktop"
+              value="Desktop"
+            />
+            <label for="desktop">Desktop</label>
+          </legend>
+        </fieldset>
+        <br />
+        <!-- Message textarea -->
+        <div class="message">
+          <label for="message">Message</label>
+          <br />
+          <textarea name="message" id="message"></textarea>
+        </div>
+
+        <!-- Buttons -->
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <hr />
+    <footer>&copy; example</footer>
+  </body>
+</html>
