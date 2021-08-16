@@ -1,0 +1,47 @@
+/* Colour variables */
+:root {
+  --navbar-color: #333333;
+  --navbar-item: #dfdfdf;
+  --white: white;
+  --bg-color: #fbfbfd;
+  font-family: 'SF Pro Text', 'Myriad Set Pro', 'SF Pro Icons', 'Helvetica Neue',
+    'Helvetica', 'Arial', sans-serif;
+  margin: 0 0;
+}
+
+body {
+  background: url('assets/banner.png');
+  background-repeat: no-repeat;
+  background-position: 50% -10%;
+  background-color: var(--bg-color);
+}
+
+/* The div that contains the list */
+.navbar {
+}
+
+/* ul tag class name */
+.navbar-list {
+  background-color: var(--navbar-color);
+  list-style: none;
+  height: 44px;
+  margin: -8px -8px;
+  padding: 0 16%;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.14px;
+}
+
+/* a tag under li */
+.navbar-item {
+  float: left;
+  color: var(--navbar-item);
+  text-decoration: none;
+  margin: 0 20px;
+  padding: 10px 15px;
+}
+
+.navbar-item:hover {
+  color: var(--white);
+}
