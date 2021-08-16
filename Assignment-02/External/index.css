@@ -1,10 +1,21 @@
+/* colour variables */
+:root {
+  --navy: navy;
+  --olive: olive;
+  --crimson: crimson;
+  --dark-navy: #00006d;
+  --light-navy: #6666ff;
+  --light-olive: #b3b300;
+  --light-crimson: #ee4466;
+  --white: white;
+}
 /* Panel widget */
 .panel {
   margin: 10px auto;
 }
 .header {
   border-radius: 0.35rem 0.35rem 0 0;
-  color: white;
+  color: var(--white);
   padding: 0.5rem 0.5rem;
 }
 .body {
@@ -13,25 +24,25 @@
 }
 
 .body-primary {
-  border: 1.7px solid navy;
+  border: 1.7px solid var(--navy);
 }
 .body-secondary {
-  border: 1.7px solid olive;
+  border: 1.7px solid var(--olive);
 }
 .body-error {
-  border: 1.7px solid crimson;
+  border: 1.7px solid var(--crimson);
 }
 
 .header-primary {
-  background-color: navy;
+  background-color: var(--navy);
 }
 
 .header-secondary {
-  background-color: olive;
+  background-color: var(--olive);
 }
 
 .header-error {
-  background-color: crimson;
+  background-color: var(--crimson);
 }
 
 /* Button widgets */
@@ -39,47 +50,55 @@ button {
   padding: 0.5rem 0.625rem;
   border: 0px;
   border-radius: 5px;
-  background-color: #00006d;
+  background-color: var(--dark-navy);
 }
 .primary {
-  background-color: navy;
-  color: white;
+  background-color: var(--navy);
+  color: var(--white);
 }
 .primary:hover {
-  background-color: #6666ff;
-  color: white;
+  background-color: var(--light-navy);
+  color: var(--white);
 }
 .primary:active {
-  background-color: navy;
-  color: white;
+  background-color: var(--navy);
+  color: var(--white);
 }
 
 .secondary {
-  background-color: olive;
-  color: white;
+  background-color: var(--olive);
+  color: var(--white);
 }
 .secondary:hover {
-  background-color: #b3b300;
-  color: white;
+  background-color: var(--light-olive);
+  color: var(--white);
 }
 .secondary:active {
-  background-color: olive;
-  color: white;
+  background-color: var(--olive);
+  color: var(--white);
 }
 .error {
-  background-color: crimson;
-  color: white;
+  background-color: var(--crimson);
+  color: var(--white);
 }
 .error:hover {
-  background-color: #ee4466;
-  color: white;
+  background-color: var(--light-crimson);
+  color: var(--white);
 }
 .error:active {
-  background-color: crimson;
-  color: white;
+  background-color: var(--crimson);
+  color: var(--white);
 }
 
 .google {
   text-decoration: none;
-  color: white;
+  color: var(--white);
+}
+.google:hover {
+  background-color: var(--light-navy);
+  color: var(--white);
+}
+.google:active {
+  background-color: var(--navy);
+  color: var(--white);
 }
