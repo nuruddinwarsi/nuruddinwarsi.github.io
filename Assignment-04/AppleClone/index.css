@@ -31,6 +31,7 @@ body {
   font-style: normal;
   font-weight: 400;
   letter-spacing: -0.14px;
+  overflow: hidden;
 }
 
 /* a tag under li */
