@@ -5,56 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-      crossorigin="anonymous"
-    />
-    <title>Apple Clone</title>
+    <link rel="stylesheet" href="normalize.css" />
+
+    <title>Apple Clone | Mobile First</title>
   </head>
   <body>
-    <ul class="navbar-list">
-      <li>
-        <a href="#" class="navbar-item">
-          <i class="fab fa-apple"></i>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="navbar-item">Store</a>
-      </li>
-      <li>
-        <a href="#" class="navbar-item">Mac</a>
-      </li>
-      <li>
-        <a href="#" class="navbar-item">iPad</a>
-      </li>
-      <li>
-        <a href="#" class="navbar-item">iPhone</a>
-      </li>
-      <li>
-        <a href="#" class="navbar-item">Watch</a>
-      </li>
-      <li>
-        <a href="#" class="navbar-item">TV</a>
-      </li>
-      <li>
-        <a href="#" class="navbar-item">Music</a>
-      </li>
-      <li>
-        <a href="#" class="navbar-item">Support</a>
-      </li>
-      <li>
-        <a href="#" class="navbar-item">
-          <i class="fas fa-search"></i>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="navbar-item">
-          <i class="fas fa-shopping-bag"></i>
-        </a>
-      </li>
-    </ul>
-    <div class="main"></div>
+    <header id="navbar">
+      <nav class="navbar-container">
+        <!-- Hamburger menu button -->
+        <div class="navbar-button d-flex">
+          <button
+            type="button"
+            class="navbar-toggle d-flex"
+            aria-label="Open navigation menu"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <!-- navbar links -->
+        <ul class="nav list-unstyled d-flex">
+          <li><a href="#" class="navbar-links">Store</a></li>
+          <li><a href="#" class="navbar-links">Mac</a></li>
+          <li><a href="#" class="navbar-links">iPad</a></li>
+          <li><a href="#" class="navbar-links">iPhone</a></li>
+          <li><a href="#" class="navbar-links">Watch</a></li>
+          <li><a href="#" class="navbar-links">TV</a></li>
+          <li><a href="#" class="navbar-links">Music</a></li>
+          <li><a href="#" class="navbar-links">Support</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <script src="index.js"></script>
   </body>
 </html>
