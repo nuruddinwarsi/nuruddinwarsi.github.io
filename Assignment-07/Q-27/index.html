@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q-27 | Assignment-07</title>
+    <style>
+      .last-para-styling {
+        border: 1px solid black;
+        padding: 0.5rem;
+        color: olive;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="para1">
+      PARA 1 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
+      eaque recusandae tempore voluptas repudiandae. Ducimus non iusto deleniti
+      exercitationem magni commodi obcaecati nam laudantium voluptas
+      consequuntur et, nemo unde harum?
+    </p>
+    <p id="para2">
+      PARA 2 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
+      eaque recusandae tempore voluptas repudiandae. Ducimus non iusto deleniti
+      exercitationem magni commodi obcaecati nam laudantium voluptas
+      consequuntur et, nemo unde harum?
+    </p>
+    <p id="para3">
+      PARA 3 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
+      eaque recusandae tempore voluptas repudiandae. Ducimus non iusto deleniti
+      exercitationem magni commodi obcaecati nam laudantium voluptas
+      consequuntur et, nemo unde harum?
+    </p>
+    <script>
+      const para1 = document.querySelector('#para1');
+      const para2 = document.querySelector('#para2');
+      const para3 = document.querySelector('#para3');
+
+      // Create a new paragraph with some text within, and add it before the first paragraph.
+      const paraBefore = document.createElement('p');
+      paraBefore.innerText =
+        'PARA BEFORE - Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo eum fugit officiis unde ipsa? Doloribus doloremque fugit quisquam. Corporis minus dolores consectetur sapiente architecto suscipit sequi assumenda quas ducimus explicabo?';
+      document.body.insertBefore(paraBefore, para1);
+
+      // Create a new paragraph with some text within, and add it to the end of the document body
+      const paraAfter = document.createElement('p');
+      paraAfter.innerText =
+        'PARA AFTER - Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo eum fugit officiis unde ipsa? Doloribus doloremque fugit quisquam. Corporis minus dolores consectetur sapiente architecto suscipit sequi assumenda quas ducimus explicabo?';
+      document.body.appendChild(paraAfter);
+
+      // Print the HTML within the second paragraph to the console
+      console.log(para2.innerText);
+
+      // Replace the contents of the second paragraph with 2 spans, each with some text
+      const newSpan1 = document.createElement('span');
+      const newSpan2 = document.createElement('span');
+
+      newSpan1.innerText = 'New span 1';
+      newSpan2.innerText = 'New span 2';
+
+      para2.innerHTML = '';
+      para2.appendChild(newSpan1);
+      para2.appendChild(newSpan2);
+
+      // Print the id of the second paragraph
+      console.log(para2.getAttribute('id'));
+
+      // Change the id of the second paragraph
+      para2.setAttribute('id', 'para2NewId');
+
+      // Set the name attribute for the second paragraph to some value. Use setAttribute to do so.
+      para2.setAttribute('name', 'para2Name');
+
+      // Set styles for the third paragraph and turn it to crimson color background with white colored text
+      para3.setAttribute('style', 'background-color: crimson; color: white;');
+
+      // Define a class in CSS that sets a black border, small padding and olive colored text. Add the class to the last paragraph
+      const lastPara = document.querySelectorAll('p:last-child');
+      // console.log(lastPara[0]);
+      lastPara[0].classList.add('last-para-styling');
+    </script>
+  </body>
+</html>
