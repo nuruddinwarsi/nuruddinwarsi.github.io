@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q-28 | Assignment-07</title>
+    <style>
+      .error {
+        background-color: lightcoral;
+        padding: 1rem 0.5rem;
+        border-radius: 5px;
+        width: 535px;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolor incidunt
+      laudantium
+    </p>
+
+    <form action="" id="form">
+      <input type="text" name="form-input" id="form-input" minlength="8" />
+      <br />
+      <input type="submit" value="Submit" id="form-submit" />
+    </form>
+
+    <script>
+      const para = document.querySelector('#para');
+      const form = document.querySelector('#form');
+      const input = document.querySelector('#form-input');
+      const submit = document.querySelector('#form-submit');
+
+      // Set up an event handler that shows an alert dialog with text of the paragraph when it is clicked
+      para.addEventListener('click', (event) => {
+        alert(para.innerText);
+      });
+
+      // Ex 2
+      // Event to check when user releases keypress
+      input.addEventListener('keyup', (event) => {
+        if (input.value.length >= 8) {
+          input.setAttribute('style', 'background-color : lightgreen');
+        } else {
+          input.setAttribute('style', 'background-color : default');
+        }
+      });
+
+      // Ex 3
+      submit.addEventListener('click', (event) => {
+        // Stop the form submit process from running by default
+        event.preventDefault();
+
+        // check input
+        if (input.value.length >= 8) {
+          form.submit();
+        } else {
+          let error = document.createElement('p');
+          error.setAttribute('class', 'error');
+          error.innerText = 'Minimum input length should be 8 characters';
+          form.insertBefore(error, submit);
+        }
+      });
+    </script>
+  </body>
+</html>
