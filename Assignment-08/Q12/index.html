@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q12 | Assignment 08</title>
+  </head>
+  <body>
+    <h2>Question : 12</h2>
+
+    <h4>Note: Answer in console</h4>
+
+    <script>
+      class Project {
+        constructor(id, name, client) {
+          this.id = id;
+          this.name = name;
+          this.client = client;
+        }
+      }
+
+      let dbsPayroll = new Project(1001, 'DBS payroll', 'DBS');
+      let intranetDeployment = new Project(
+        2001,
+        'Intranet v2 deployment',
+        'Internal'
+      );
+
+      class Employee {
+        constructor(id, name, role, department, projects) {
+          this.id = id;
+          this.name = name;
+          this.role = role;
+          this.department = department;
+          this.projects = projects;
+        }
+      }
+      const john = new Employee(1, 'John', 'Web Developer', 'IT', [dbsPayroll]);
+      const jane = new Employee(2, 'Jane', 'Project Manager', 'IT', [
+        dbsPayroll,
+        intranetDeployment,
+      ]);
+      const mark = new Employee(
+        3,
+        'Mark',
+        'System Administrator',
+        'Operations',
+        [intranetDeployment]
+      );
+      console.log(john);
+      console.log(jane);
+      console.log(mark);
+    </script>
+  </body>
+</html>
