@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VueJS | Q5</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module">
+      import Vue from './../vue.esm.browser.js';
+      new Vue({
+        el: '#app',
+        template: `
+        <div>
+          <p>
+              <div>Name: </div>
+              <div>{{product.name}}</div>
+          </p>
+          <p>
+              <div>Price: </div>
+              <div>{{product.price}}</div>
+          </p>
+          <div>
+              <div>Colors: </div>
+              <ul>
+                  <li v-for="color in product.colors">
+                      {{color}} 
+                  </li>
+              </ul>
+          </div>
+        </div>
+        `,
+        data: {
+          product: {
+            name: 'Apple iPhone 12',
+            price: 900,
+            colors: ['Space Gray', 'White', 'Red'],
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
