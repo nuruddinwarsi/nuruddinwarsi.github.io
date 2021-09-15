@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VueJS | Q01</title>
+  </head>
+  <body>
+    <div id="domEl">
+      <h1>DOM ELEMENT</h1>
+      <form id="login-form" action="/login">
+        <div>
+          <label for="username1">Username: </label>
+          <input id="username1" type="text" placeholder="Username" />
+        </div>
+        <div>
+          <label for="password1">Password: </label>
+          <input id="password1" type="password" placeholder="Password" />
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div id="stringEl"></div>
+
+    <script type="module">
+      import Vue from './../vue.esm.browser.js';
+
+      new Vue({
+        el: '#stringEl',
+        template: `
+        <div>
+            <h2>STRING ELEMENT</h2>
+            <form action="/login" id="login-form-2">
+                <div>
+                    <label for="username2">Username: </label>
+                    <input id="username2" type="text" placeholder="Username">
+                </div>
+                <div>
+                    <label for="password2">Password: </label>
+                    <input id="password2" type="password" placeholder="Password">
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        `,
+      });
+
+      new Vue({
+        el: '#domEl',
+      });
+    </script>
+  </body>
+</html>
