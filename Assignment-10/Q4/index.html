@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VueJS | Q4</title>
+    <style>
+      body * {
+        margin: 20px;
+        border: 1px ridge black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module">
+      import Vue from './../vue.esm.browser.js';
+
+      new Vue({
+        el: '#app',
+        template: `
+            <form v-on:click="doSomething('form')">FORM
+                <div v-on:click="doSomething('div')">DIV
+                    <p v-on:click="doSomething('p')"> Clicking on this box will allow bubbling and capturing </p>
+                    <p v-on:click.stop="doSomething('p')"> Clicking on this box will stop bubbling and capturing </p>
+                </div>
+            </form>
+            `,
+        methods: {
+          doSomething(element) {
+            alert(element);
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
