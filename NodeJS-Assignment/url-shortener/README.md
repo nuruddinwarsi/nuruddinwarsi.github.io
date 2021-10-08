@@ -35,4 +35,9 @@ Response Body
 ```
 URL : http://localhost:3000/dhGEx
 Request Type : GET
+
+Response Body :
+{
+    "original": "https://www.npmjs.com/"
+}
 ```
