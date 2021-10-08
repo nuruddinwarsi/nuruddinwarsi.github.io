@@ -58,7 +58,7 @@ server.on('request', (req, res) => {
         res.end(JSON.stringify({ error: err }));
       }
     });
-  } else if (req.method === 'GET') {
+  } else if (req.url.slice(0, 1) === '/' && req.method === 'GET') {
     const id = req.url.slice(1);
     const URLStoreObject = checkIfIdExists(id);
 
