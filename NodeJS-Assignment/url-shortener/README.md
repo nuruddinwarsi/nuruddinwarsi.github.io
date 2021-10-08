@@ -25,7 +25,7 @@ Request Body :
 Response Body
 {
     "id": "dhGEx",
-    "original": "https://www.reddit.com/",
+    "original": "https://www.npmjs.com/",
     "short": "http://localhost:3000/dhGEx"
 }
 ```
