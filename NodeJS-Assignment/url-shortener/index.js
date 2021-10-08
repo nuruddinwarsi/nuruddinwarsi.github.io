@@ -68,7 +68,7 @@ server.on('request', (req, res) => {
     } else {
       res.end(
         JSON.stringify({
-          OriginalURL: URLStoreObject.OriginalUrl,
+          original: URLStoreObject.original,
         })
       );
     }
