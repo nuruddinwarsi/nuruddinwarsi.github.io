@@ -66,6 +66,7 @@ server.on('request', (req, res) => {
       res.statusCode = 404;
       res.end(JSON.stringify({ Success: 'URL doesnt exist' }));
     } else {
+      res.setHeader('Content-Type', 'application/json');
       res.end(
         JSON.stringify({
           original: URLStoreObject.original,
